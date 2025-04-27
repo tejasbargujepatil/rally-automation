@@ -1,0 +1,49 @@
+{
+  "name": "rally-automation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "scripts": {
+    "pull-stories": "ts-node src/scripts/pullStories.ts",
+    "import-testcases": "ts-node src/scripts/importTestCases.ts",
+    "test": "cucumber-js --require-module ts-node/register src/features/**/*.feature",
+        "test": "cucumber-js --require-module ts-node/register --require src/features/**/*.ts",
+    "test:debug": "cucumber-js --require-module ts-node/register --require src/features/**/*.ts --inspect-brk",
+    "test:debug:watch": "cucumber-js --require-module ts-node/register --require src/features/**/*.ts --inspect-brk --watch",
+    "test:debug:watch:all": "cucumber-js --require-module ts-node/register --require src/features/**/*.ts --inspect-brk --watch --tags @all",
+    "test:debug:watch:all:parallel": "cucumber-js --require-module ts-node/register --require src/features/**/*.ts --inspect-brk --watch --tags @all --parallel",
+    "test:debug:watch:all:parallel:rerun": "cucumber-js --require-module ts-node/register --require src/features/**/*.ts --inspect-brk --watch --tags @all --parallel --rerun",
+    "test:debug:watch:all:parallel:rerun:report": "cucumber-js --require-module ts-node/register --require src/features/**/*.ts --inspect-brk --watch --tags @all --parallel --rerun --format progress-bar --format json:reports/cucumber_report.json",
+    "test:debug:watch:all:parallel:rerun:report:html": "cucumber-js --require-module ts-node/register --require src/features/**/*.ts --inspect-brk --watch --tags @all --parallel --rerun --format progress-bar --format json:reports/cucumber_report.json --format html:reports/cucumber_report.html",
+    "test:debug:watch:all:parallel:rerun:report:html:json": "cucumber-js --require-module ts-node/register --require src/features/**/*.ts --inspect-brk --watch --tags @all --parallel --rerun --format progress-bar --format json:reports/cucumber_report.json --format html:reports/cucumber_report.html",
+    "test:debug:watch:all:parallel:rerun:report:html:json:xml": "cucumber-js --require-module ts-node/register --require src/features/**/*.ts --inspect-brk --watch --tags @all --parallel --rerun --format progress-bar --format json:reports/cucumber_report.json --format html:reports/cucumber_report.html --format xml:reports/cucumber_report.xml",
+    "test:debug:watch:all:parallel:rerun:report:html:json:xml:json-summary": "cucumber-js --require-module ts-node/register --require src/features/**/*.ts --inspect-brk --watch --tags @all --parallel --rerun --format progress-bar --format json:reports/cucumber_report.json --format html:reports/cucumber_report.html --format xml:reports/cucumber_report.xml --format json-summary:reports/cucumber_report.json-summary",
+    "test:debug:watch:all:parallel:rerun:report:html:json:xml:json-summary:json-formatter": "cucumber-js --require-module ts-node/register --require src/features/**/*.ts --inspect-brk --watch --tags @all --parallel --rerun --format progress-bar --format json:reports/cucumber_report.json --format html:reports/cucumber_report.html --format xml:reports/cucumber_report.xml --format json-summary:reports/cucumber_report.json-summary --format json-formatter:reports/cucumber_report.json-formatter",
+    "test:debug:watch:all:parallel:rerun:report:html:json:xml:json-summary:json-formatter:html": "cucumber-js --require-module ts-node/register --require src/features/**/*.ts --inspect-brk --watch --tags @all --parallel --rerun --format progress-bar --format json:reports/cucumber_report.json --format html:reports/cucumber_report.html --format xml:reports/cucumber_report.xml --format json-summary:reports/cucumber_report.json-summary --format json-formatter:reports/cucumber_report.json-formatter --format html:reports/cucumber_report.html",
+    "build": "tsc",
+    "clean": "rm -rf dist/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.52.0",
+    "@types/csv-parse": "^1.1.12",
+    "@types/node": "^22.15.2",
+    "csv-parser": "^3.2.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^11.2.0",
+    "axios": "^1.9.0",
+    "csv-parse": "^5.6.0",
+    "cucumber": "^6.0.7",
+    "dotenv": "^16.5.0",
+    "playwright": "^1.52.0"
+  }
+}
