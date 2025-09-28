@@ -283,7 +283,7 @@ Emergency Hotline: [Chat on WhatsApp](https://wa.me/918087147136?text=Hello%20Te
 
 **Checkout Our Projects:** [Visit Portfolio](https://tejasbargujepatilcom.vercel.app/)
  
-## Review By Client <a name="Review"></a>
+## Review <a name="Review"></a>
 <img width="1858" height="959" alt="image" src="https://github.com/user-attachments/assets/8245dea6-2e09-4e4b-98a8-709f5612bfd6" />
 
 
