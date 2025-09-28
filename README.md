@@ -14,6 +14,7 @@
 10. [Security](#security)
 11. [Version Control](#version-control)
 12. [References](#references)
+13. [Review](#Review)
 
 ## Project Overview <a name="project-overview"></a>
 Automation solution to integrate Rally with local file system:
@@ -281,6 +282,9 @@ Emergency Hotline: [Chat on WhatsApp](https://wa.me/918087147136?text=Hello%20Te
 ### Portfolio:
 
 **Checkout Our Projects:** [Visit Portfolio](https://tejasbargujepatilcom.vercel.app/)
+ 
+## Review By Client <a name="Review></a>
+<img width="1858" height="959" alt="image" src="https://github.com/user-attachments/assets/8245dea6-2e09-4e4b-98a8-709f5612bfd6" />
 
 
 ---
